@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="markers_file_name" default="map_markers_1"/>
+    <arg name="marker_positions_file" default="$(find environments)/maps/aulas_R/$(arg markers_file_name).yaml" />
+
+    <node pkg="detector" type="detector_node" name="detector_now" respawn="false" output="screen" >
+        <rosparam command="load" file="$(arg marker_positions_file)"/> <!-- load the marker positions -->
+        <param name= "camera_image_input"  value= "/camera/RGB/image_raw"/>
+        <param name= "camera_image_output" value= "/image_converter/output_video"/>
+        <param name= "camera_info"         value= "/camera/RGB/camera_info"/>
+        <param name= "amcl_pixels_clouds"  value= "/pixels_clouds"/>
+    </node>
+
+</launch>
