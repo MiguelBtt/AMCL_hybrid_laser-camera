@@ -1,0 +1,96 @@
+<arg name="initial_pose_x" default="-9.136"/>
+<arg name="initial_pose_y" default="-21.484"/>
+<arg name="initial_pose_a" default="1.57"/>
+<arg name="initial_pose_z" default="0.0"/>
+
+Speed: 0.32805 m/s
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+
+######   simu_1  ######
+- Only camera: 
+marker_sigma_hit marker : 0.5
+
+- Hybrid: 
+hybrid_marker = 0.5, hybrid_laser = 0.5
+laser_z_hit = 0.95
+laser_z_rand = 0.05
+
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_2  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_3  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_4  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_5  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+
+######   simu_fail_1  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.5
+laser_z_hit = 0.95
+laser_z_rand = 0.05
+
+######   simu_fail_2  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.25
+laser_z_hit = 0.95
+laser_z_rand = 0.05
+
+######   simu_fail_3  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.95
+laser_z_rand = 0.05
+
+######   simu_fail_4  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.25
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_fail_5  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.5
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_fail_6  ######
+- Only scan2D: 
+marker_sigma_hit laser: 1.0
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+
+######   simu_fail_7  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.25
+laser_z_hit = 0.2
+laser_z_rand = 0.8
+
+######   simu_test_1  ######
+- Only scan2D: 
+marker_sigma_hit laser: 0.1
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+

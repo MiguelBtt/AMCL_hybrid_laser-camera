@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <!-- The Willow Garaga offices -->
+    <include>
+      <uri>model://willowgarage</uri>
+    </include>
+    <include>
+      <uri>model://marker0</uri>
+      <pose>-14.81 8.22 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker1</uri>
+      <pose>-7.19 16.65 1.50 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker2</uri>
+      <pose>-4.40 2.15 1.40 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker3</uri>
+      <pose>11.956 13.86 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker4</uri>
+      <pose>13.25 7.14 1.40 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker5</uri>
+      <pose>12.93 20.44 1.40 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker6</uri>
+      <pose>-5.3 19.96 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker7</uri>
+      <pose>18.552 7.148 1.40 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker8</uri>
+      <pose>-14.31 18.38 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker9</uri>
+      <pose>8.31 9.25 1.40 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker10</uri>
+      <pose>24.05 9.25 1.40 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker11</uri>
+      <pose>29.0 4.10 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker12</uri>
+      <pose>32.4 9.3 1.40 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker13</uri>
+      <pose>25.518 9.464 1.40 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker14</uri>
+      <pose>23.79 18.862 1.40 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker15</uri>
+      <pose>36.329 19.421 1.40 0 0 3.14</pose>
+    </include>
+    <include>
+      <uri>model://marker16</uri>
+      <pose>28.967 -2.325 1.40 0 0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://marker17</uri>
+      <pose>31.005 20.284 1.40 0 0 3.14</pose>
+    </include>
+    <include>
+      <uri>model://marker18</uri>
+      <pose>28.79 -14.217 1.40 0 0 3.14</pose>
+    </include>
+    <include>
+      <uri>model://marker19</uri>
+      <pose>14.28 -13.756 1.40 0 0 0.774</pose>
+    </include>
+    <include>
+      <uri>model://marker20</uri>
+      <pose>17.92 -16.13 1.40 0 0 3.14</pose>
+    </include>
+    <include>
+      <uri>model://marker21</uri>
+      <pose>2.097 -6.265 1.40 0 0 -0.816</pose>
+    </include>
+    <include>
+      <uri>model://marker22</uri>
+      <pose>-10.602 -0.868 1.40 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker23</uri>
+      <pose>-10.711 -7.043 1 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker24</uri>
+      <pose>-8.312 -4.961 1.4 0 0 -2.368</pose>
+    </include>
+    <include>
+      <uri>model://marker25</uri>
+      <pose>1.74 -3.181 1.4 0 0 3.14</pose>
+    </include>
+    <include>
+      <uri>model://marker26</uri>
+      <pose>11.87 -11.935 1.4 0 0 2.368</pose>
+    </include>
+    <include>
+      <uri>model://marker27</uri>
+      <pose>10.72 -16.921 1.4 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker28</uri>
+      <pose>3.219 -15.4 1.4 0 0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker29</uri>
+      <pose>-4.2517 -16.91 1.4 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://marker30</uri>
+      <pose>28.966 -9.273 1.4 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

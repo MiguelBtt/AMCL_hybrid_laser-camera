@@ -1,0 +1,171 @@
+    <arg name="initial_pose_x" default="24.194"/>
+    <arg name="initial_pose_y" default="-14.376"/>
+    <arg name="initial_pose_a" default="0.0"/>
+<arg name="initial_pose_z" default="0.0"/>
+
+The same values for every tests:
+Estos valores se ha utilizado para todas la pruebas simu_# tanto para el laser como el hybrid
+Speed: 0.32805 m/s
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.1
+
+
+     ######  simu_1  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.1
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.1
+
+Hybrid with the same values
+
+     ######  simu_2  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.1
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.1
+
+Hybrid with the same values
+
+    ######  simu_3  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.01
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.1
+
+Hybrid with the same values
+
+    ######  simu_4  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.25
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.25
+
+Hybrid with the same values
+
+    ######  simu_5  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.25
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.25
+
+Hybrid with the same values
+
+    ######  simu_6  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.25
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.25
+
+Hybrid with the same values
+
+    ######  simu_7  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.5
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+
+Hybrid with the same values
+
+    ######  simu_8  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.5
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+
+Hybrid with the same values
+
+    ######  simu_9  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.5
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+
+Hybrid with the same values
+
+    ######  simu_10  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 1
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 1
+
+Hybrid with the same values
+
+    ######  simu_11  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 1
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 1
+
+Hybrid with the same values
+
+    ######  simu_12  ######
+Only laser
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 1
+
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 1
+
+Hybrid with the same values

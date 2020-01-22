@@ -1,0 +1,1 @@
+X_gazebo,Y_gazebo,X_amcl,Y_amcl

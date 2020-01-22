@@ -1,0 +1,64 @@
+<launch>
+ <!-- #########   Parameters values ######### -->
+  <arg name="model" default="burger_maps_creator"/>
+  <arg name="x_pos" default="-2.0"/>
+  <arg name="y_pos" default="-0.5"/>
+  <arg name="z_pos" default="0.0"/>
+
+  <!-- width and height image in pixels --> 
+  <arg name="w_image" default="500"/> 
+  <arg name="h_image" default="500"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/kitchen_dining.world"/>
+    <!-- arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/empty.world"/ -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find turtlebot3_description)/urdf/turtlebot3_burger_maps_creator.urdf.xacro w_image:=$(arg w_image) h_image:=$(arg h_image)" />
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3_burger -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+
+  <!-- Map server -->
+  <!-- node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/ -->
+
+  <!-- Adding for depth camera Tf -->
+      <!-- args=" x y z yaw pitch roll frame_id child_frame_id  period "-->
+  <node pkg="tf" type="static_transform_publisher" name="camera_depth_tf" args="0 0 0 -1.57 0 -1.57 camera_link camera_depth_link 100"/>
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <!-- pointCloud to laserScan -->
+
+  <!--node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan">
+      <remap from="cloud_in" to="/camera/depth/points"/>
+      <remap from="scan" to="/camera/scan"/>
+      <rosparam>
+        target_frame: camera_link
+        transform_tolerance: 0.01
+        min_height: 0.0
+        max_height: 2.0
+        
+        angle_min: -0.7854
+        angle_max: 0.7854
+        angle_increment: 0.0087
+        scan_time: 0.3333
+        range_min: 0.05
+        range_max: 4.5
+        use_inf: true
+        
+        #concurrency_level affects number of pc queued for processing and the number of threadsused
+        # 0: Detect number of cores
+        # 1: Single threaded
+        # 2: inf : Parallelism level
+        concurrency_level: 1
+      </rosparam>
+    </node -->
+
+</launch>

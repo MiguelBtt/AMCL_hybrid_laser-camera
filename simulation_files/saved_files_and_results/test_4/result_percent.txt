@@ -1,0 +1,15 @@
+### Hybrid values refer to Marker values:
+
+#### mean ####
+mean X position error_marker: -5.9%
+
+mean Y position error_marker: 29.3%
+
+mean Distance position error_marker: -0.79%
+
+mean YAW error_marker: 23.7%
+
+mean X deviation_marker: -25.32%
+
+mean Y deviation_marker: -33.17%
+

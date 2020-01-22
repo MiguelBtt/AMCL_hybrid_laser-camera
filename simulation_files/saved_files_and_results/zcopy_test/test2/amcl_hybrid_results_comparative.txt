@@ -1,0 +1,2 @@
+Laser weight,Marker weight,X position error,Y position error,Pos position error,YAW error,X deviation,Y deviation,YAW deviation
+1.939,5.385,0.063,0.066,0.099,2.245,0.125,0.119,0.044

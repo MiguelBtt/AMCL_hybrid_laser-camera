@@ -1,0 +1,10 @@
+Mean laser weight: 2.334
+Mean Marker weight: 0.0
+Mean X position error: 0.016
+Mean Y position error: 0.021
+Mean Pos position error: 0.028
+Mean YALL error: 0.021
+Mean X deviation: 0.145
+Mean Y deviation: 0.144
+Mean YALL deviation: 0.09
+Mean deviation: 0.126

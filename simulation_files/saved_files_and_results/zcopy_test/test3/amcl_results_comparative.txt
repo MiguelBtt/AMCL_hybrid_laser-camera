@@ -1,0 +1,25 @@
+### Hybrid values refer to Laser and Marker values:
+
+Laser weight: 5.87%
+Marker weight: 9.34%
+
+X position error_laser: -56.67%
+X position error_marker: -82.89%
+
+Y position error_laser: 11.11%
+Y position error_marker: -81.68%
+
+Pos position error_laser: -3.45%
+Pos position error_marker: -80.56%
+
+YAW error_laser: -39.73%
+YAW error_marker: -83.25%
+
+X deviation_laser: -27.78%
+X deviation_marker: -83.04%
+
+Y deviation_laser: -37.9%
+Y deviation_marker: -75.9%
+
+YAW deviation_laser: -84.0%
+YAW deviation_marker: -84.0%

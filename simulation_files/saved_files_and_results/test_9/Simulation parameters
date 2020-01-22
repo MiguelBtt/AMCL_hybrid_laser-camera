@@ -1,0 +1,20 @@
+<arg name="initial_pose_x" default="-1.631"/>
+<arg name="initial_pose_y" default="-3.923"/>
+arg name="initial_pose_a" default="1.57"/>
+<arg name="initial_pose_z" default="0.0"/>
+
+The same values for every tests:
+Estos valores se ha utilizado para todas la pruebas simu_# tanto para el laser como el hybrid
+mapa: kitchen_dining
+Speed: 0.1937102445 m/s
+Turn: 0.387420489 r/s
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.1
+
+
+   ####  simu_fail_1,2,3 ####
+La altura del pointcloudtolaser estaba a la misma altura del 9.8 por eso no detectaba los encimieras, solamente las paredes. Esto puede ser lo que haya producido el error.

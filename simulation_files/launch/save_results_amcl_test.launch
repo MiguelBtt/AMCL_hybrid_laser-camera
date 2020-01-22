@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="sensor"/>
+    <arg name="test"/>
+    <arg name="path_file" default="/home/miguel/catkin_ws/src/simulation_files/saved_files_and_results/test_$(arg test)/amcl_$(arg sensor)"/>
+    <arg name="robot_name" default="turtlebot3_burger"/>
+
+    <node pkg="simulation_files" type="save_robot_pose.py" name="save_robot_pose" output="screen" >
+        <param name= "save_file_path"  value= "$(arg path_file)"/>
+        <param name= "robot_name"      value= "$(arg robot_name)"/>
+        <param name= "topic_pose"      value= "/amcl_pose"/> 
+    </node>
+
+</launch>

@@ -1,0 +1,57 @@
+    <arg name="initial_pose_x" default="13.1806"/>
+    <arg name="initial_pose_y" default="15.1389"/>
+    <arg name="initial_pose_a" default="1.57"/>
+<arg name="initial_pose_z" default="0.0"/>
+
+The same values for every tests:
+Estos valores se ha utilizado para todas la pruebas simu_# tanto para el laser como el hybrid
+Speed: 0.32805 m/s
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+marker_sigma_hit laser: 0.1
+
+
+######  simu_fail_1  ######
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+
+######  simu_fail_2  ######
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.25
+
+######  simu_fail_3  ######
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.1
+
+######  simu_fail_4  ######
+Only Marker
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 1
+
+######  simu_fail_5  ######
+Only Marker
+marker_z_hit = 0.5
+marker_z_rand = 0.5
+marker_sigma_hit marker : 0.1
+
+######  simu_fail_6  ######
+Only Marker
+marker_z_hit = 0.5
+marker_z_rand = 0.5
+marker_sigma_hit marker : 0.25
+
+######  simu_fail_7  ######
+Only Marker
+marker_z_hit = 0.5
+marker_z_rand = 0.5
+marker_sigma_hit marker : 0.5

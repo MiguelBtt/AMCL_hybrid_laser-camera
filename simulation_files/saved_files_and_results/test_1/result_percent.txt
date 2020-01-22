@@ -1,0 +1,21 @@
+### Hybrid values refer to Laser and Marker values:
+
+#### mean ####
+mean X position error_laser: -29.44%
+mean X position error_marker: -32.91%
+
+mean Y position error_laser: 59.02%
+mean Y position error_marker: -47.43%
+
+mean Distance position error_laser: -20.12%
+mean Distance position error_marker: -38.93%
+
+mean YAW error_laser: -18.58%
+mean YAW error_marker: -3.16%
+
+mean X deviation_laser: -50.16%
+mean X deviation_marker: -59.43%
+
+mean Y deviation_laser: -37.21%
+mean Y deviation_marker: -57.23%
+

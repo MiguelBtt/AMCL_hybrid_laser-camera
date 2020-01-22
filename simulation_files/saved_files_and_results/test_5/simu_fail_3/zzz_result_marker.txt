@@ -1,0 +1,2 @@
+mean X error,mean Y error,mean Distance error,mean YAW error,mean X deviation,mean Y deviation,max X error,max Y error,max Distance error,max YAW error,max X deviation,max Y deviation,min X error,min Y error,min Distance error,min YAW error,min X deviation,min Y deviation
+0.885,0.538,1.058,4.573,2.177,2.575,2.18,1.758,2.801,11.268,27.559,28.115,0.009,0.013,0.05,0.036,0.13,0.114

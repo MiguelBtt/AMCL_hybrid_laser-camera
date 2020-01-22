@@ -1,0 +1,47 @@
+    <arg name="initial_pose_x" default="-5.47"/>
+    <arg name="initial_pose_y" default="3.10"/>
+    <arg name="initial_pose_a" default="1.57"/>
+    <arg name="initial_pose_z" default="0.0"/>
+
+The same values for every tests:
+Estos valores se ha utilizado para todas la pruebas simu_# tanto para el marker y laser
+mapa: kitchen_dining_full
+speed: 0.3245	
+turn: 0.6561
+marker_z_hit = 0.95
+marker_z_rand = 0.05
+marker_sigma_hit marker : 0.5
+laser_z_hit = 0.5
+laser_z_rand = 0.5
+laser_sigma_hit laser: 0.1
+
+#####   simu_1   #####
+odom_alpha3 = 0.8
+
+#####   simu_2   #####
+odom_alpha3 = 0.8
+
+#####   simu_3   #####
+odom_alpha3 = 0.8
+
+#####   simu_4   #####
+odom_alpha3 = 0.8
+
+#####   simu_5   #####
+odom_alpha3 = 0.8
+
+#####   simu_6   #####
+odom_alpha3 = 0.2
+
+#####   simu_7   #####
+odom_alpha3 = 0.2
+
+#####   simu_8   #####
+odom_alpha3 = 0.2
+
+#####   simu_9   #####
+odom_alpha3 = 0.2
+
+#####   simu_10   #####
+odom_alpha3 = 0.2
+

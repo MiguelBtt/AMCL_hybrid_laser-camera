@@ -1,0 +1,38 @@
+<arg name="initial_pose_x" default="11.838"/>
+<arg name="initial_pose_y" default="8.154"/>
+<arg name="initial_pose_z" default="0.0"/>
+<arg name="initial_pose_a" default="3.14"/>
+Speed: 21,.... cm/s
+laser_z_hit = 0.95
+laser_z_rand = 0.05
+
+######   simu_1  ######
+- marker_sigma_hit : 100
+
+######   simu_2  ######
+- marker_sigma_hit : 1
+
+######   simu_3  ######
+- marker_sigma_hit : 0.5
+
+######   simu_4  ######
+- marker_sigma_hit : 0.25
+
+######   simu_5  ######
+- marker_sigma_hit : 0.25
+
+######   simu_6  ######
+- marker_sigma_hit : 0.25
+
+######   simu_7  ######
+- marker_sigma_hit : 0.50
+
+######   simu_8  ######
+- marker_sigma_hit : 0.50
+
+######   simu_9  ######
+- marker_sigma_hit : 1
+
+######   simu_10  ######
+- marker_sigma_hit : 1
+

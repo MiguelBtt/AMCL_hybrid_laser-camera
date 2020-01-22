@@ -1,0 +1,60 @@
+<launch>
+ <!-- #########   Parameters values ######### -->
+  <arg name="x_pos" default="-2.0"/>
+  <arg name="y_pos" default="-0.5"/>
+  <arg name="z_pos" default="0.0"/>
+  <arg name="map_file" default="$(find environments)/maps/turtlebot3/map_hexa.yaml"/>
+
+  <!-- width and height image in pixels --> 
+  <arg name="w_image" default="500"/> 
+  <arg name="h_image" default="500"/> 
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find environments)/worlds/turtlebot3/turtlebot3_hexa_6.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro.py $(find environments)/robots/turtlebot3_burger_1/turtlebot3_burger_small.urdf.xacro w_image:=$(arg w_image) h_image:=$(arg h_image)" />
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model turtlebot3_burger -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+
+  <!-- Map server -->
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- Adding for depth camera Tf -->
+  <node pkg="tf" type="static_transform_publisher" name="camera_depth_tf" args="0 0 0 -1.57 0 -1.57 camera_link camera_depth_link 100"/>
+
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <!-- pointCloud to laserScan -->
+  <include file="$(find pointcloud_to_laserscan)/launch/miguel_pointcloud_to_laserscan.launch">
+    <arg name="min_height" value="-0.3"/>
+    <arg name="max_height" value="0.3"/>
+  </include>
+
+  <!-- publisher of gazebo position robot -->
+  <node pkg="simulation_files" type="listener_pos_gazebo_node" name="listener_pos_gazebo">
+    <param name="robot_name" value="turtlebot3_burger"/>
+  </node>
+  
+  <!-- Gaussian scan noise -->
+  <node pkg="simulation_files" type="noise_scan.py" name="noise_scan">
+    <param name="noise" value="0.01"/>
+    <param name="topic_sub" value="/camera/scan"/>
+    <param name="topic_pub" value="/camera/scan/noise"/>
+  </node>
+
+  <!-- Marker detecter -->
+  <!-- node pkg="detector" name="detector_node" type="detector_node"/ -->
+
+  <!-- AMCL -->
+  <!-- include file="$(find turtlebot3_gazebo)/launch/amcl.launch"/ -->
+
+</launch>
